@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat+Alternates:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <!-- SVG LOGO ANIMATE-->
+                <ul>
+                    <li><a href=#>home</a></li>
+                    <li><a href=about.html>About Us</a></li>
+                    <li><a href=contact.html>Contat Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <article>
+                <h1>Moments & Lens</h1>
+                <p>We do family, lifestlye, portraits, and newborn photography. It all started as a hobby of taking pictures for friends and family and grew into a small business.</p>
+            </article>
+            <div class="photogrid">
+                <picture> <!--child_portrait-->
+                    <source 
+                        srcset="imgs/low_res/child_portrait-300_x_300.jpg" 
+                        media="(max-width: 479px)"
+                    >
+                    <source
+                        srcset="imgs/medium_res/child_portrait-580_x_580.jpg"
+                        media="(min-width: 480px)"
+                    >
+                    <img src="img/medium_res/child_portrait-580_x_580.jpg" alt="">
+                </picture>
+                <picture> <!--b-w_profile-->
+                    <source 
+                        srcset="imgs/low_res/b-w_profile-300_x_300.jpg" 
+                        media="(max-width: 479px)"
+                    >
+                    <source
+                        srcset="imgs/medium_res/b-w_profile-580_x_580.jpg"
+                        media="(min-width: 480px)"
+                    >
+                    <img src="img/medium_res/b-w_profile-580_x_580.jpg" alt="">
+                </picture>
+                <picture> <!--red_dress-->
+                    <source 
+                        srcset="imgs/low_res/red_dress-300_x_300.jpg" 
+                        media="(max-width: 479px)"
+                    >
+                    <source
+                        srcset="imgs/medium_res/red_dress-580_x_580.jpg"
+                        media="(min-width: 480px)"
+                    >
+                    <img src="img/medium_res/red_dress-580_x_580.jpg" alt="">
+                </picture>
+                <picture> <!--beach_portrait-->
+                    <source 
+                        srcset="imgs/low_res/beach_portrait-300_x_300.jpg" 
+                        media="(max-width: 479px)"
+                    >
+                    <source
+                        srcset="imgs/medium_res/beach_portrait-580_x_580.jpg"
+                        media="(min-width: 480px)"
+                    >
+                    <img src="img/medium_res/beach_portrait-580_x_580.jpg" alt="">
+                </picture>
+            </div>
+            <!--SVG BUTTON ANIMATE-->
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+</body>
+</html>
