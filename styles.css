@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,17 +56,27 @@ table {
 body {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 18px;
-	line-height: 1.25em;
+	line-height: 1.5em;
 }
 
 h1 {
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 1.33rem;
+	padding-bottom: 0.5rem;
 }
 
 h2 {
 	font-family: 'Julius Sans One', sans-serif;
+	padding-top: 1.3rem;
+	padding-bottom: 0.5rem;
 }
+
+h3 {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 1.25rem;
+	padding-bottom: 0.5rem;
+}
+
 
 img {
 	max-width: 100%;
@@ -73,7 +84,7 @@ img {
 	border-radius: 0.75rem;
 }
 
-button {
+nav button {
 	border: 0;
 }
 
@@ -188,6 +199,7 @@ nav {
 
 .photogrid {
 	background-color: #FFDEF0;
+	margin-top: 1rem;
 	padding: 2rem 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -203,6 +215,11 @@ nav {
 	margin: auto;
 	border-radius: 0;
 	
+}
+
+/** class for things i want to hide on mobile **/
+.nophone {
+	display: none;
 }
 
 .meetsamir {
@@ -226,8 +243,90 @@ form {
 	background-color: #FFDEF0;
 }
 
+
+
+.centerbox {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	flex-direction: column;
+}
+
+.book {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.book svg ellipse{
+	fill: #B6EBB5;
+    filter: drop-shadow( 0px 4px 3px rgba(0, 0, 0, .5));
+}
+
+.book svg text {
+	fill: #9E6A87;
+	text-anchor: middle;
+	scale: 1;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 2rem;
+}
+
 /*** footer mobile styles ***/
 
 footer {
 	background-color: #B6EBB5;
+	text-align: center;
 }
+
+footer small {
+	color: #9E6A87;
+}
+
+@media only screen and (min-width: 799px) {
+	.nophone {
+		display: block;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.staticnav {
+		display: flex;
+	}
+
+	.dropdown {
+		display: none;
+	}
+
+	.infogrid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 6rem;
+		align-items: center;
+		margin-top: 2rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.infogrid article {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		
+	}
+
+	.photogrid {
+		
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.infogrid .promocard {
+		background-color: #FFDEF0;
+		padding: 2rem 1rem;
+		border-radius: 0.75rem;
+	}
+  }
