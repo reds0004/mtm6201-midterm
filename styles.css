@@ -68,6 +68,7 @@ h1 {
 h2 {
 	font-family: 'Julius Sans One', sans-serif;
 	padding-bottom: 0.5rem;
+	text-decoration: underline;
 }
 
 h3 {
@@ -92,6 +93,21 @@ nav button {
 header {
     background-color: #B6EBB5;
 	padding-top: 1.5rem;
+}
+
+.skip {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.skip:focus {
+	position: static;
+	width: auto;
+	height: auto;
 }
 
 /*** mobile svg logo ***/
@@ -239,6 +255,18 @@ nav {
 	border-radius: 0;
 }
 
+.meetsamir .blurb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.meetsamir p {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
 section {
 	display:flex;
 	align-items: center;
@@ -324,7 +352,6 @@ form input[type=submit] {
 .book svg text {
 	fill: #9E6A87;
 	text-anchor: middle;
-	scale: 1;
 	font-family: 'Julius Sans One', sans-serif;
 	font-size: 2rem;
 }
@@ -338,6 +365,15 @@ footer {
 
 footer small {
 	color: #9E6A87;
+}
+
+@media only screen and (min-width: 449px) {
+	
+	/** trying to make meet samir box not look bad on tiny phones without changing layout **/
+	.meetsamir p {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
 }
 
 @media only screen and (min-width: 799px) {
@@ -411,12 +447,15 @@ footer small {
 		margin-bottom: 2rem;
 	}
 
-	.meetsamir p {
+	.meetsamir .blurb {
 		grid-column-start: 2;
 		grid-column-end: 4;
 		padding-left: 1rem;
 		padding-right: 1rem;
+	}
 
+	.meetsamir .blurb h2 {
+		padding-bottom: 2rem;
 	}
 
 	.aboutimgs {
