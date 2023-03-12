@@ -47,6 +47,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*** my styles ***/
 /*** general mobile styles ***/
 
 .container {
@@ -84,9 +85,7 @@ img {
 	border-radius: 0.75rem;
 }
 
-nav button {
-	border: 0;
-}
+
 
 /*** header mobile styles ***/
 
@@ -94,6 +93,8 @@ header {
     background-color: #B6EBB5;
 	padding-top: 1.5rem;
 }
+
+/**skiplink**/
 
 .skip {
 	position: absolute;
@@ -162,6 +163,10 @@ nav {
 	max-width: 80px;
 	
 }
+
+nav button {
+	border: 0;
+}
   
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -191,6 +196,7 @@ nav {
     display: block;
 }
 
+/* adjusting spacing*/
 .dropdown-content a:first-child {
 	padding-top: 1.5rem;
 }
@@ -212,6 +218,7 @@ nav {
 
 /*** Main mobile styles ***/
 
+/*making my 4x4 grid*/
 .photogrid {
 	background-color: #FFDEF0;
 	margin-top: 1rem;
@@ -237,6 +244,7 @@ nav {
 	display: none;
 }
 
+/*grid for about page*/
 .meetsamir {
 	background-color: #FFDEF0;
 	padding: 2rem 1rem;
@@ -255,6 +263,7 @@ nav {
 	border-radius: 0;
 }
 
+/*getting heading and paragraph to get along*/
 .meetsamir .blurb {
 	display: flex;
 	justify-content: center;
@@ -267,10 +276,17 @@ nav {
 	line-height: 1rem;
 }
 
-section {
+/*getting contact svg and headding aligned*/
+section a {
 	display:flex;
 	align-items: center;
 	padding: 1rem;
+	text-decoration: none;
+	color: #9E6A87;
+}
+
+section a:hover {
+	text-decoration: underline;
 }
 
 section svg {
@@ -290,10 +306,33 @@ aside h2 {
 	margin-bottom: 1rem;
 }
 
-iframe {
+.locate {
+	padding: 2rem 2rem 2rem 2rem;
+	background-color: #B6EBB5;
+	border-radius: 0.75rem;
+}
+
+.locate h3 {
+	margin-top: 2rem;
+}
+
+
+.gmap {
+	padding-bottom: 50%;
+	position: relative;
+	height: 10rem;
+}
+
+.gmap iframe {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
 	border: 2px solid #9E6A87;
 	border-radius: 0.75rem;
 }
+
 
 /** form styles **/
 
@@ -498,14 +537,22 @@ footer small {
 		text-align: center;
 	}
 
-	section {
+	section a {
 		flex-direction: column;
 	}
 
-	/** hide mobile map**/
-	iframe {
-		display: none;
+	.locate {
+		background-color: #B6EBB5;
+		padding: 2rem 2rem;
+		margin: 2rem 11rem 0rem 11rem;
+		border-radius: 0.75rem;
 	}
+
+	.locate .centerbox {
+		align-items: flex-start;
+	}
+
+	
 
 	/** Stop the form from stretching too much **/
 	form {

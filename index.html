@@ -143,8 +143,8 @@
                 </figure>
             </div>
             <!---I don't have super high res photos of the original content but i tihnk these will do-->
-            <div class="photogrid">
-                <picture> <!--child_portrait-->
+            <div class="photogrid" itemscope itemtype="https://schema.org/CreativeWork">
+                <picture itemprop="exampleOfWork"> <!--child_portrait-->
                     <source 
                         srcset="imgs/low_res/child_portrait-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -155,7 +155,7 @@
                     >
                     <img src="img/medium_res/child_portrait-580_x_580.jpg" alt="">
                 </picture>
-                <picture> <!--b-w_profile-->
+                <picture itemprop="exampleOfWork"> <!--b-w_profile-->
                     <source 
                         srcset="imgs/low_res/b-w_profile-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -166,7 +166,7 @@
                     >
                     <img src="img/medium_res/b-w_profile-580_x_580.jpg" alt="">
                 </picture>
-                <picture> <!--red_dress-->
+                <picture itemprop="exampleOfWork"> <!--red_dress-->
                     <source 
                         srcset="imgs/low_res/red_dress-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -177,7 +177,7 @@
                     >
                     <img src="img/medium_res/red_dress-580_x_580.jpg" alt="">
                 </picture>
-                <picture> <!--beach_portrait-->
+                <picture itemprop="exampleOfWork"> <!--beach_portrait-->
                     <source 
                         srcset="imgs/low_res/beach_portrait-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -188,7 +188,7 @@
                     >
                     <img src="img/medium_res/beach_portrait-580_x_580.jpg" alt="">
                 </picture>
-                <picture class="nophone"> <!--child_portrait-->
+                <picture class="nophone" itemprop="exampleOfWork"> <!--child_portrait-->
                     <source 
                         srcset="imgs/low_res/child_portrait-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -199,7 +199,7 @@
                     >
                     <img src="img/medium_res/child_portrait-580_x_580.jpg" alt="">
                 </picture>
-                <picture class="nophone"> <!--b-w_profile-->
+                <picture class="nophone" itemprop="exampleOfWork"> <!--b-w_profile-->
                     <source 
                         srcset="imgs/low_res/b-w_profile-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -210,7 +210,7 @@
                     >
                     <img src="img/medium_res/b-w_profile-580_x_580.jpg" alt="">
                 </picture>
-                <picture class="nophone"> <!--red_dress-->
+                <picture class="nophone" itemprop="exampleOfWork"> <!--red_dress-->
                     <source 
                         srcset="imgs/low_res/red_dress-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -221,7 +221,7 @@
                     >
                     <img src="img/medium_res/red_dress-580_x_580.jpg" alt="">
                 </picture>
-                <picture class="nophone"> <!--beach_portrait-->
+                <picture class="nophone" itemprop="exampleOfWork"> <!--beach_portrait-->
                     <source 
                         srcset="imgs/low_res/beach_portrait-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -232,7 +232,7 @@
                     >
                     <img src="img/medium_res/beach_portrait-580_x_580.jpg" alt="">
                 </picture>
-                <picture class="nophone"> <!--child_portrait-->
+                <picture class="nophone" itemprop="exampleOfWork"> <!--child_portrait-->
                     <source 
                         srcset="imgs/low_res/child_portrait-300_x_300.jpg" 
                         media="(max-width: 479px)"
@@ -257,7 +257,9 @@
     <footer>
         <div class="container">
             <!--copyright-->
-            <small>&copy;Samir Chaulagain Moments and Lens</small>
+            <div itemscope itemtype="https://schema.org/LocalBusiness">
+                <small itemprop="legalName">&copy;Samir Chaulagain Moments and Lens</small>
+            </div>
         </div>
     </footer>
 </body>
