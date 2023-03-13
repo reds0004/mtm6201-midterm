@@ -67,6 +67,7 @@ h1 {
 	margin-bottom: 1rem;
 }
 
+/** added an underline to h2 to make them stand out more **/
 h2 {
 	font-family: 'Julius Sans One', sans-serif;
 	padding-bottom: 0.5rem;
