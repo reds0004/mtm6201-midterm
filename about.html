@@ -12,9 +12,9 @@
 </head>
 <body>
     <header>
-        <a href="#skiptarget" class="skip">Skip to main content</a>
+        <a href="#skiptarget" class="skip">Skip to main content</a> <!--Skiplink-->
         <div class="container">     
-            <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240.14 133.89">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240.14 133.89"> <!--all my logo svg-->
                 <defs>
                         <style>
                         .cls-1 {
@@ -49,21 +49,21 @@
                 <text x="10" y="60" id="svgmoments">Moments</text>
                 <text x="50" y="80" id="svglens">& Lens</text>
             </svg>
-            <nav>
-                <ul class="staticnav">
+            <nav> 
+                <ul class="staticnav"> <!--nav for desktop, hidden on mobile-->
                     <li><a href=index.html>home</a></li>
                     <li><a href=#>About Us</a></li>
                     <li><a href=contact.html>Contact Us</a></li>
                 </ul>
-                <div class="dropdown">
+                <div class="dropdown"> <!--nav fo mobile, hidden on desktop-->
                     <button class="dropbtn">
                         <svg class="hamburger" viewBox="0 0 100 80" width="120" height="40">
                             <rect x="0" y="0" width="120" height="20"></rect>
                             <rect x="0" y="30" width="120" height="20"></rect>
                             <rect x="0" y="60" width="120" height="20"></rect>
-                        </svg>
+                        </svg><!--hamburger menu svg-->
                     </button>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content"><!--div for dropdown menu, hidden off screen untill dropbtn is active-->
                         <a href=index.html>home</a>
                         <a href=#>About</a>
                         <a href=contact.html>Contact</a>
@@ -74,7 +74,7 @@
     </header>
     <main>
         <div class="container">
-            <h1 id="skiptarget">About Us</h1>
+            <h1 id="skiptarget">About Us</h1> <!--skiplink goes here-->
             <article itemscope itemtype="https://schema.org/Person" class="meetsamir">
                 <picture itemprop="image"> <!--samir_portrait-->
                     <source 
@@ -85,20 +85,52 @@
                         srcset="imgs/medium_res/samir_portrait.jpg"
                         media="(min-width: 480px)"
                     >
-                    <img src="img/medium_res/samir_portrait.jpg" alt="A photo of Samir">
+                    <img src="imgs/medium_res/samir_portrait.jpg" alt="A photo of Samir">
                 </picture>
                 <div class="blurb">
-                    <h2>Meet Samir</h2>
+                    <h2>Meet Samir</h2> <!--blurb about Samir-->
                     <p>Moments & Lens is a family-oriented photography company, run by <em itemprop="givenName">Samir</em> <em itemprop="familyName">Chaulagain</em>. Samir's passion for photography began with his own family and he's excited to bring the same level of care to families in Orleans and Rockland.</p>
                 </div>
             </article>
                 <aside>
                     <div itemscope itemtype="https://schema.org/LocalBusiness" class="centerbox">
                         <div class="aboutimgs">
-                            <img src="imgs/birthday.jpg" alt="A child's birthday party" >
-                            <img src="imgs/april_nicole_hayden.jpg" alt="portrait of two women and a child" class="nophone">
+                            <picture>
+                                <source
+                                    srcset="imgs/low_res/birthday-300_x_235.jpg 1x,
+                                    imgs/medium_res/birthday-600_x_468.jpg 2x"
+                                    media="(max-width: 400px)"
+                                > <!--visible on mobile media query small res loads-->
+                                <source
+                                    srcset="imgs/medium_res/birthday-450_x_351.jpg 1x,
+                                    imgs/birthday.jpg 2x"
+                                    media="(max-width:799px)"
+                                > <!--larger res loads up until media break 800px-->
+                                <source
+                                    srcset="imgs/low_res/birthday-540_x_351.jpg 1x,
+                                    imgs/medium_res/birthday-600_x_468.jpg 2x"
+                                    media="(max-width: 800px)"
+                                > <!--back down because page reformats so this image only takes up half the screen-->
+                                <source
+                                    srcset="imgs/birthday.jpg"
+                                    media="(min-width:1200px)"
+                                > <!--load highest res only from here on-->
+                                <img src="imgs/birthday.jpg" alt="A child's birthday party" >
+                            </picture>
+                            <picture>
+                                <source
+                                    srcset="imgs/low_res/april_nicole_hayden-450_x_351.jpg 1x,
+                                    imgs/medium_res/april_nicole_hayden-600_x_468.jpg 2x"
+                                    media="(max-width: 800px)"
+                                > <!--this image only takes up half the screen-->
+                                <source
+                                    srcset="imgs/april_nicole_hayden.jpg"
+                                    media="(min-width:1200px)"
+                                > <!--load highest res only from here on-->
+                                <img src="imgs/april_nicole_hayden.jpg" alt="portrait of two women and a child" class="nophone">
+                            </picture>
                         </div>
-                        <h2>Services</h2>
+                        <h2>Services</h2> <!--services blurb, used <em> tags to splice in some schema-->
                         <p> Moments & Lens is equipped to shoot personal and family portraits both outdoors and indoors in the <em itemprop="areaServed">Orleans and Rockland</em> areas. <em itemprop="makesOffer">We are able to deliver prints of any size, up to and including 40 x 60 inches, and can rent equipment to produce larger prints upon request.</em></p>
                     </div>
                 </aside>

@@ -80,20 +80,11 @@ h3 {
 	padding-bottom: 0.5rem;
 }
 
-
+/*make imgs behave and have a rounded border*/
 img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 0.75rem;
-}
-
-
-
-/*** header mobile styles ***/
-
-header {
-    background-color: #B6EBB5;
-	padding-top: 1.5rem;
 }
 
 /** animations  **/
@@ -131,6 +122,16 @@ header {
 	100% {transform: rotate(0deg);}
 }
 
+
+/*** header mobile styles ***/
+
+header {
+    background-color: #B6EBB5;
+	padding-top: 1.5rem;
+}
+
+
+
 /**skiplink**/
 
 .skip {
@@ -149,7 +150,7 @@ header {
 }
 
 /*** mobile svg logo and animations***/
-
+/*style and animate svg logo text*/
 #svgmoments {
 	transform: scale(1.4);
 	font-family: 'Julius Sans One', sans-serif;
@@ -165,7 +166,7 @@ header {
 	animation-name: zoomin;
 	animation-duration: 2.5s;
 }
-
+/*animate svg images in logo*/
 #smear {
 	animation-name: fadein;
 	animation-duration: 2.5s;
@@ -184,6 +185,7 @@ header {
 	margin-right: auto;
 }
 
+/*hide desktop nav on mobile*/
 .staticnav {
 	display: none;
 }
@@ -195,6 +197,7 @@ header {
 	display: none;
 }
 
+/*move dropdown to right*/
 nav {
 	display: flex;
 	flex-direction: row-reverse;
@@ -209,6 +212,7 @@ nav {
 	padding: 0;
 }
 
+/* style hamburger svg*/
 .hamburger {
 	fill: #84A383;
 	max-width: 80px;
@@ -281,6 +285,7 @@ nav button {
 	border-radius: 0.75rem;
 }
 
+/*style images in photogrid*/
 .photogrid img {
 	display: block;
 	max-width: 100%;
@@ -290,6 +295,7 @@ nav button {
 	
 }
 
+/*animate book now button*/
 .book svg:hover {
 	animation-name: shake;
 	animation-duration: 1s;
@@ -346,6 +352,7 @@ section a:hover {
 	text-decoration: underline;
 }
 
+/*spacing things*/
 section svg {
 	margin-right: 1rem;
 }
@@ -374,7 +381,7 @@ aside h2 {
 	margin-top: 2rem;
 }
 
-
+/*styling and containment of iframe gmap*/
 .gmap {
 	padding-bottom: 50%;
 	position: relative;
@@ -423,7 +430,7 @@ form input[type=submit] {
 	padding: 1rem 0.5rem 2rem 0.5rem;
 }
 
-
+/*box to center things*/
 .centerbox {
 	display: flex;
 	align-items: center;
