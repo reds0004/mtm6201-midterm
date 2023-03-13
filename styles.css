@@ -64,12 +64,14 @@ h1 {
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 2rem;
 	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 h2 {
 	font-family: 'Julius Sans One', sans-serif;
 	padding-bottom: 0.5rem;
 	text-decoration: underline;
+	
 }
 
 h3 {
@@ -153,7 +155,7 @@ header {
 	font-family: 'Julius Sans One', sans-serif;
 	fill: #9E6A87;
 	animation-name: zoomin;
-	animation-duration: 3s;
+	animation-duration: 2s;
 }
 
 #svglens {
@@ -161,7 +163,7 @@ header {
 	font-family: 'Julius Sans One', sans-serif;
 	fill: #9E6A87;
 	animation-name: zoomin;
-	animation-duration: 3.5s;
+	animation-duration: 2.5s;
 }
 
 #smear {
