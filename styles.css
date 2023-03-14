@@ -468,8 +468,9 @@ footer {
 	text-align: center;
 }
 
+/** made this darker for contrast **/
 footer small {
-	color: #9E6A87;
+	color: #2b1d24;
 }
 
 @media only screen and (min-width: 449px) {
