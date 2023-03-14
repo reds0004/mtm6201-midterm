@@ -54,10 +54,10 @@
                 <text x="50" y="80" id="svglens">& Lens</text>
             </svg>
             <nav> 
-                <ul class="staticnav"> <!--nav for desktop, hidden on mobile-->
-                    <li><a href=index.html>home</a></li>
-                    <li><a href=#>About Us</a></li>
-                    <li><a href=contact.html>Contact Us</a></li>
+                <ul role="menu" class="staticnav"> <!--nav for desktop, hidden on mobile-->
+                    <li><a role="menuitem" href=index.html>home</a></li>
+                    <li><a role="menuitem" href=#>About Us</a></li>
+                    <li><a role="menuitem" href=contact.html>Contact Us</a></li>
                 </ul>
                 <div class="dropdown"> <!--nav fo mobile, hidden on desktop-->
                     <button class="dropbtn">
@@ -67,10 +67,10 @@
                             <rect x="0" y="60" width="120" height="20"></rect>
                         </svg><!--hamburger menu svg-->
                     </button>
-                    <div class="dropdown-content"><!--div for dropdown menu, hidden off screen untill dropbtn is active-->
-                        <a href=index.html>home</a>
-                        <a href=#>About</a>
-                        <a href=contact.html>Contact</a>
+                    <div class="dropdown-content" role="menu"><!--div for dropdown menu, hidden off screen untill dropbtn is active-->
+                        <a role="menuitem" href=index.html>home</a>
+                        <a role="menuitem" href=#>About</a>
+                        <a role="menuitem" href=contact.html>Contact</a>
                     </div>
                 </div>
             </nav>
