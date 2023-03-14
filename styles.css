@@ -349,6 +349,11 @@ section a {
 	color: #9E6A87;
 }
 
+/** made this darker because it was failing contrast check**/
+section h3 {
+	color: #2b1d24;
+}
+
 section a:hover {
 	text-decoration: underline;
 }
